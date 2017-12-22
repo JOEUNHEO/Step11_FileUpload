@@ -5,6 +5,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
+	/*
+		http://servlets.com/cos/ 에서 압축 파일을 받아서
+		안에 들어있는 cos.jar 파일을
+		WEB-INF/lib/ 폴더에 넣어주면 아래와 같이 파일 업로드
+		처리를 할 수 있다.
+	*/
+
 	//파일을 저장할 폴더의 절대 경로를 얻어온다.
 	String realPath=application.getRealPath("/upload"); //application 객체는 기본 객체이다.
 	//콘솔에 테스트로 출력해보기
